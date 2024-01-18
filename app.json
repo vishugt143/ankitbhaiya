@@ -1,0 +1,68 @@
+
+{
+
+    "name": "PARADISE",
+
+    "description": "A Modular telegram bot.",
+
+    "repository": "https://github.com/imacekun/cw-dl",
+    "buildpacks":[
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "https://github.com/amivin/aria2-heroku.git"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "keywords": [
+
+       
+
+        "telegram bot",
+
+        "pyrogram"
+
+    ],
+
+    "env": {
+
+        "BOT_TOKEN": {
+
+            "description": "Your Bot token from @Botfather",
+            "value": "6262497675:AAFLEXHAq_uw8np_dwaid05ViNTafux0hCs"
+
+        },
+
+        "API_ID": {
+
+            "description": "Your API_ID from https://my.telegram.org/apps",
+            "value": "20346550"
+
+        },
+
+        "API_HASH": {
+
+            "description": "Your API_HASH from https://my.telegram.org/apps",
+            "value": "bc79c3bea7a626887bdc0871eecf0327"
+
+        }
+
+    },
+
+    "buildpacks": [
+
+        {
+
+            "url": "heroku/python"
+
+        },
+       {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+
+    ]
+
+}
