@@ -23,14 +23,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6422344189:AAEAUvZ7kOK0T2-DwdQVro3UE8OX-1fogII",
+             bot_token= "6484103873:AAHNKxEKcyRYxDcTgrj1GsB-G9S32wvTmxQ",
              api_id=20346550,
              api_hash= "bc79c3bea7a626887bdc0871eecf0327")
 
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY ʜᴇxᴀ ᴛᴀʟᴋ🇦 🇰 🇰 🇮 👨🏻‍💻[{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Ak47")
+    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY Mr.Perfect™[{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Ak47")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading 📥:-\n\nVideo Name🚦:- {name}\nQuality 📹 - {raw_text2}\nLink 🔗 :{url}\n\n **bot made by ʜᴇxᴀ ᴛᴀʟᴋ🇦 🇰 🇰 🇮 👨🏻‍💻**")
+                    prog = await m.reply_text(f"**Downloading 📥:-\n\nVideo Name🚦:- {name}\nQuality 📹 - {raw_text2}\nLink 🔗 :{url}\n\n **bot made by Mr.Perfect™👨🏻‍💻**")
                     
                     
                     res_file = await helper.download_video(url, cmd, name)
